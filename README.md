@@ -2,7 +2,9 @@
 
 　　這裡是一個簡單的 Repo。用於放置一些我在學習 Python 中的練習作品，並藉由此 Repo 來熟悉 Git, GitHub, GitHub Desktop 的技術原理及使用方法。
 
-[TOC]
+[Tkinter](#Tkinter)
+
+​		[Tkinter_BMIcalc.py](#Tkinter_BMIcalc.py)
 
 ## Tkinter
 

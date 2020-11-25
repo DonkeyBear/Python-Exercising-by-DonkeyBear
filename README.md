@@ -4,10 +4,10 @@
 
 ## 目錄
 
-* [Automate the boring stuff with Python](Automate the boring stuff with Python)
-  * [birthday_dictionary.py](birthday_dictionary.py)
-  * [print_a_heart.py](print_a_heart.py)
-  * [tictactoe.py](tictactoe.py)
+* [Automate the boring stuff with Python](#Automate the boring stuff with Python)
+  * [birthday_dictionary.py](#birthday_dictionary.py)
+  * [print_a_heart.py](#print_a_heart.py)
+  * [tictactoe.py](#tictactoe.py)
 
 * [Tkinter](#Tkinter)
   * [Tkinter_BMIcalc.py](#Tkinter_BMIcalc.py)

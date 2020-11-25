@@ -4,15 +4,17 @@
 
 ## 目錄
 
-* [Automate the boring stuff with Python](#Automate the boring stuff with Python)
+* **[Automate the boring stuff with Python](#Automate-the-boring-stuff-with-Python)**
   * [birthday_dictionary.py](#birthday_dictionary.py)
   * [print_a_heart.py](#print_a_heart.py)
   * [tictactoe.py](#tictactoe.py)
 
-* [Tkinter](#Tkinter)
+* **[Tkinter](#Tkinter)**
   * [Tkinter_BMIcalc.py](#Tkinter_BMIcalc.py)
 
 ## Automate the boring stuff with Python
+
+　　依照《[Automate the boring stuff with Python](https://automatetheboringstuff.com/)》（另有簡體中譯本：[Python編程快速上手 - 讓繁瑣工作自動化](https://www.books.com.tw/products/CN11361197)）一書範例所作的程式練習。
 
 ### birthday_dictionary.py
 

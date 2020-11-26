@@ -10,12 +10,11 @@
 >   * [birthday_dictionary.py](#birthday_dictionarypy)
 >   * [print_a_heart.py](#print_a_heartpy)
 >   * [tictactoe.py](#tictactoepy)
+> *  **[Misc](#Misc)**
+>   * [Fibonacci.py](#fibonaccipy)
+>   * [MultiplicationTable.py](#multiplicationtablepy)
 > * **[Tkinter](#Tkinter)**
 >   * [Tkinter_BMIcalc.py](#Tkinter_BMIcalcpy)
-
-
-
-
 
 ## Automate the boring stuff with Python
 
@@ -33,10 +32,6 @@
 
 　　使用字典（dictionary）繪製棋盤，進行雙人對戰的井字遊戲。
 
-
-
-
-
 ## Misc
 
 　　雜項。即無特定範例或參考，隨意練習而作的小作品。
@@ -48,10 +43,6 @@
 ### MultiplicationTable.py
 
 　　經過計算與排版後印出九九乘法表。
-
-
-
-
 
 ## Tkinter
 

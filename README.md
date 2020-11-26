@@ -38,6 +38,8 @@
 
 　　使用字典（dictionary）繪製棋盤，進行雙人對戰的井字遊戲。
 
+[返回目錄](#目錄)
+
 ## Misc
 
 　　雜項。即無特定範例或參考，隨意練習而作的小作品。
@@ -81,6 +83,8 @@
 
 　　輸入 `秒數`，自動將其轉換為「`時：分：秒`」。
 
+[返回目錄](#目錄)
+
 ## Tkinter
 
 　　使用 Python 內建的 GUI 函式庫 **Tkinter** 建立的範例與練習。
@@ -88,3 +92,5 @@
 ### Tkinter_BMIcalc.py
 
 　　使用《[如何使用 Python Tkinter 製作 GUI 應用程式入門教學](https://blog.techbridge.cc/2019/09/21/how-to-use-python-tkinter-to-make-gui-app-tutorial/)》中的 BMI 計算器範例加以改良及增加註解標示，增加作為範例的可讀性。
+
+[返回目錄](#目錄)

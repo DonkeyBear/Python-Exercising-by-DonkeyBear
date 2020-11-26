@@ -8,10 +8,16 @@
 >   * [birthday_dictionary.py](#birthday_dictionarypy)
 >   * [print_a_heart.py](#print_a_heartpy)
 >   * [tictactoe.py](#tictactoepy)
->   
 > * **[Misc](#Misc)**
+>   * [AnchorTrans.py](#anchortranspy)
 >   * [Fibonacci.py](#fibonaccipy)
+>   * [IntSumSeries.py](#intsumseriespy)
 >   * [MultiplicationTable.py](#multiplicationtablepy)
+>   * [NumSorter.py](#numsorterpy)
+>   * [PrimeNumPrinter.py](#primenumprinterpy)
+>   * [SentenceRandomRebuilder.py](#sentencerandomrebuilderpy)
+>   * [TextReverser.py](#textreverserpy)
+>   * [TimeUnitTrans.py](#timeunittranspy)
 >
 > * **[Tkinter](#Tkinter)**
 >   * [Tkinter_BMIcalc.py](#Tkinter_BMIcalcpy)
@@ -36,13 +42,44 @@
 
 　　雜項。即無特定範例或參考，隨意練習而作的小作品。
 
+### AnchorTrans.py
+
+　　輸入 Markdown 之下的標題名稱，即可自動轉換成符合文法的錨點標記。順便一提，這是我第一個為了實際需求所寫的 Python 程式，特此紀念。
+
 ### Fibonacci.py
 
 　　以遞迴的方式印出費氏數列。
 
+### IntSumSeries.py
+
+　　輸入 `n`，輸出 `1 + 2 + ... + n` 之計算結果。
+
 ### MultiplicationTable.py
 
 　　經過計算與排版後印出九九乘法表。
+
+### NumSorter.py
+
+　　輸入四個數字，依照大小重新排序，並指出最大與最小值。
+
+### PrimeNumPrinter.py
+
+　　輸入 `n`，產生由 `1` 到 `n (n >= 1)` 之間的所有質數。
+
+### SentenceRandomRebuilder.py
+
+　　將輸入的內容以空白為分界進行隨機重新排列。
+
+### TextReverser.py
+
+　　雙功能文字反轉器：
+
+* 字串反轉。如：輸入 abcdef，則輸出 fedcba。
+* 文字順序反轉。如：輸入 see you later，則輸出 later see you。
+
+### TimeUnitTrans.py
+
+　　輸入秒數，自動將其轉換為「時：分：秒」。
 
 ## Tkinter
 

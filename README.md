@@ -2,6 +2,8 @@
 
 　　這裡是一個簡單的 Repo。用於放置一些我在學習 Python 中的練習作品，並藉由此 Repo 來熟悉 Git, GitHub, GitHub Desktop 的技術原理及使用方法。
 
+
+
 ## 目錄
 
 > * **[Automate the boring stuff with Python](#Automate-the-boring-stuff-with-Python)**
@@ -10,6 +12,8 @@
 >   * [tictactoe.py](#tictactoepy)
 > * **[Tkinter](#Tkinter)**
 >   * [Tkinter_BMIcalc.py](#Tkinter_BMIcalcpy)
+
+
 
 ## Automate the boring stuff with Python
 
@@ -26,6 +30,22 @@
 ### tictactoe.py
 
 　　使用字典（dictionary）繪製棋盤，進行雙人對戰的井字遊戲。
+
+
+
+## Misc
+
+　　雜項。即無特定範例或參考，隨意練習而作的小作品。
+
+### Fibonacci.py
+
+　　以遞迴的方式印出費氏數列。
+
+### MultiplicationTable.py
+
+　　經過計算與排版後印出九九乘法表。
+
+
 
 ## Tkinter
 

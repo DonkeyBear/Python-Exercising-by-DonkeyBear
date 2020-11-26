@@ -13,7 +13,7 @@
 
 ## Automate the boring stuff with Python
 
-　　依照《[Automate the boring stuff with Python](https://automatetheboringstuff.com/)》（另有簡體中譯本：[Python編程快速上手 - 讓繁瑣工作自動化](https://www.books.com.tw/products/CN11361197)）一書範例，經過個人改良後增加註解說明的程式練習。
+　　依照《[Automate the boring stuff with Python](https://automatetheboringstuff.com/)》（另有簡體中譯本：《[Python編程快速上手 - 讓繁瑣工作自動化](https://www.books.com.tw/products/CN11361197)》）一書範例，經過個人改良後增加註解說明的程式練習。
 
 ### birthday_dictionary.py
 
@@ -34,4 +34,3 @@
 ### Tkinter_BMIcalc.py
 
 　　使用《[如何使用 Python Tkinter 製作 GUI 應用程式入門教學](https://blog.techbridge.cc/2019/09/21/how-to-use-python-tkinter-to-make-gui-app-tutorial/)》中的 BMI 計算器範例加以改良及增加註解標示，增加作為範例的可讀性。
-

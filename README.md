@@ -74,12 +74,12 @@
 
 　　雙功能文字反轉器：
 
-* 字串反轉。如：輸入 abcdef，則輸出 fedcba。
-* 文字順序反轉。如：輸入 see you later，則輸出 later see you。
+* 字串反轉。如：輸入 `abcdef`，則輸出 `fedcba`。
+* 文字順序反轉。如：輸入 `see you later`，則輸出 `later see you`。
 
 ### TimeUnitTrans.py
 
-　　輸入秒數，自動將其轉換為「時：分：秒」。
+　　輸入 `秒數`，自動將其轉換為「`時：分：秒`」。
 
 ## Tkinter
 

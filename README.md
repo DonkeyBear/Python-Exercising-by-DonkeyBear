@@ -12,13 +12,10 @@
 >   * [tictactoe.py](#tictactoepy)
 >   
 > * **[Misc](#Misc)**
->
 >   * [Fibonacci.py](#fibonaccipy)
->
 >   * [MultiplicationTable.py](#multiplicationtablepy)
 >
 > * **[Tkinter](#Tkinter)**
->   
 >   * [Tkinter_BMIcalc.py](#Tkinter_BMIcalcpy)
 
 ## Automate the boring stuff with Python

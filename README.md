@@ -15,6 +15,8 @@
 
 
 
+
+
 ## Automate the boring stuff with Python
 
 　　依照《[Automate the boring stuff with Python](https://automatetheboringstuff.com/)》（另有簡體中譯本：《[Python編程快速上手 - 讓繁瑣工作自動化](https://www.books.com.tw/products/CN11361197)》）一書範例，經過個人改良後增加註解說明的程式練習。
@@ -33,6 +35,8 @@
 
 
 
+
+
 ## Misc
 
 　　雜項。即無特定範例或參考，隨意練習而作的小作品。
@@ -44,6 +48,8 @@
 ### MultiplicationTable.py
 
 　　經過計算與排版後印出九九乘法表。
+
+
 
 
 

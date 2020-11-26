@@ -10,10 +10,15 @@
 >   * [birthday_dictionary.py](#birthday_dictionarypy)
 >   * [print_a_heart.py](#print_a_heartpy)
 >   * [tictactoe.py](#tictactoepy)
-> *  **[Misc](#Misc)**
+>   
+> * **[Misc](#Misc)**
+>
 >   * [Fibonacci.py](#fibonaccipy)
+>
 >   * [MultiplicationTable.py](#multiplicationtablepy)
+>
 > * **[Tkinter](#Tkinter)**
+>   
 >   * [Tkinter_BMIcalc.py](#Tkinter_BMIcalcpy)
 
 ## Automate the boring stuff with Python

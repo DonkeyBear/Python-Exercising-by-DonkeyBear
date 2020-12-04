@@ -4,11 +4,15 @@
 
 ## 目錄
 
-> * **[Automate the boring stuff with Python](#automate-the-boring-stuff-with-python)**
+> * [**Automate the boring stuff with Python**](#automate-the-boring-stuff-with-python)
 >     * [birthday_dictionary.py](#birthday_dictionarypy)
 >     * [print_a_heart.py](#print_a_heartpy)
 >     * [tictactoe.py](#tictactoepy)
-> * **[Misc](#misc)**
+> * [**Encode and Encrypt**](#encode-and-encrypt)
+>     * [BinaryToGray.py](#binarytograypy)
+>     * [CaesarCipher.py](#caesarcipherpy)
+>     * [GrayToBinary.py](#graytobinarypy)
+> * [**Misc**](#misc)
 >     * [AnchorTrans.py](#anchortranspy)
 >     * [Fibonacci.py](#fibonaccipy)
 >     * [IntSumSeries.py](#intsumseriespy)
@@ -18,7 +22,7 @@
 >     * [SentenceRandomRebuilder.py](#sentencerandomrebuilderpy)
 >     * [TextReverser.py](#textreverserpy)
 >     * [TimeUnitTrans.py](#timeunittranspy)
-> * **[Tkinter](#tkinter)**
+> * [**Tkinter**](#tkinter)
 >     * [Tkinter_BMIcalc.py](#tkinter_bmicalcpy)
 
 ## Automate the boring stuff with Python
@@ -36,6 +40,24 @@
 ### tictactoe.py
 
 　　使用字典（dictionary）繪製棋盤，進行雙人對戰的井字遊戲。
+
+[返回目錄](#目錄)
+
+## Encode and Encrypt
+
+　　轉換編碼、加密、解密等程式作品。
+
+### BinaryToGray.py
+
+　　輸入 `二元碼`（binary code）後即可自動轉換為對應的 `格雷碼`（gray code）。
+
+### CaesarCipher.py
+
+　　用於將文字加密為凱薩密碼，或將凱薩密碼解密成文字。
+
+### GrayToBinary.py
+
+　　輸入 ``格雷碼`（gray code）後即可自動轉換為對應的 `二元碼`（binary code）。
 
 [返回目錄](#目錄)
 

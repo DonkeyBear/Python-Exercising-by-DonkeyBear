@@ -11,6 +11,7 @@ plainList = []
 
 # 金鑰範圍：1 ~ 25
 for caesarKey in range(1, 26):
+    plainList = []
     for i in range(0, len(cipherList)):
         if cipherList[i].isupper() == True:
             j = upperList.index(cipherList[i])
@@ -28,9 +29,9 @@ for caesarKey in range(1, 26):
             plainList.append(cipherList[i])
 
     plainText = ''.join(plainList)
-    keyNum = caesarKey
+    keyNum = str(caesarKey)
     if caesarKey < 10:
-        keyNum = str(caesarKey + ' ')
+        keyNum = str(caesarKey) + ' '
     print('以 ' + keyNum + ' 作為金鑰解密後的內容為：' + plainText)
 
 input()

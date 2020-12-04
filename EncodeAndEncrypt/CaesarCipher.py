@@ -5,18 +5,30 @@ def encryptCaesar():
     plainList = [] 
     plainList[:] = plainText
     cipherList = []
-    caesarListUpper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-    caesarListLower = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+    upperList = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+    lowerList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
     caesarKey = int(input('請輸入金鑰（偏移量）：'))
+    if caesarKey > 25:
+        caesarKey = caesarKey % 26
+
     for i in range(0, len(plainList)):
         if plainList[i].isupper == True:
+            j = upperList.index(plainList[i])
+            j += caesarKey
+            if j > 25:
+                j -= 26
+            cipherList.append(upperList[j])
 
         if plainList[i].islower == True:
+            j = lowerList.index(plainList[i])
+            j += caesarKey
+            if j > 25:
+                j -= 26
+            cipherList.append(lowerList[j])
 
         else:
-            
-
+            cipherList.append(plainList[i])
 
 def decryptCaesar():
     None

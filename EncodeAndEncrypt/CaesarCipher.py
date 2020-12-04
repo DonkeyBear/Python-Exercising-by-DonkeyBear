@@ -19,6 +19,7 @@ def encryptCaesar():
             if j > 25:
                 j -= 26
             cipherList.append(upperList[j])
+            continue
 
         if plainList[i].islower == True:
             j = lowerList.index(plainList[i])
@@ -26,9 +27,13 @@ def encryptCaesar():
             if j > 25:
                 j -= 26
             cipherList.append(lowerList[j])
+            continue
 
         else:
             cipherList.append(plainList[i])
+
+    cipherText = ''.join(cipherList)
+    print(cipherText)
 
 def decryptCaesar():
     None

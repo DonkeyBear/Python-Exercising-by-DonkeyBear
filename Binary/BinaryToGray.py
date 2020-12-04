@@ -1,4 +1,6 @@
-binaryInput = input()
+from sys import exit as sysExit
+
+binaryInput = input('請輸入二元碼：')
 binaryList = [] 
 binaryList[:0] = binaryInput
 grayList = []
@@ -8,6 +10,7 @@ for i in range(0, len(binaryList)):
     if binaryList[i] == '0' or binaryList[i] == '1':
         continue
     print('Error')
+    sysExit()
     break
 
 # 從 LSB 往回作互斥或運算
@@ -22,4 +25,4 @@ grayList.insert(0, binaryList[0])
 
 # 將串列轉換成字串後印出
 grayOutput = ''.join(grayList)
-print(grayOutput)
+print('轉換為格雷碼：' + grayOutput)

@@ -28,4 +28,7 @@ for caesarKey in range(1, 26):
             plainList.append(cipherList[i])
 
     plainText = ''.join(plainList)
-    print('解密後的內容為：' + plainText)
+    keyNum = caesarKey
+    if caesarKey < 10:
+        keyNum = str(caesarKey + ' ')
+    print('以 ' + keyNum + ' 作為金鑰解密後的內容為：' + plainText)

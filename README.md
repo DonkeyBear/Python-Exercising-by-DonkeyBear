@@ -57,7 +57,7 @@
 
 ### GrayToBinary.py
 
-　　輸入 ``格雷碼`（gray code）後即可自動轉換為對應的 `二元碼`（binary code）。
+　　輸入 `格雷碼`（gray code）後即可自動轉換為對應的 `二元碼`（binary code）。
 
 [返回目錄](#目錄)
 

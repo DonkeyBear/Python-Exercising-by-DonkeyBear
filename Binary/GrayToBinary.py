@@ -16,12 +16,12 @@ for i in range(0, len(grayList)):
 # 將格雷碼之 MSB 置於二元碼之 MSB
 binaryList.append(grayList[0])
 
-# 
+# 將格雷碼與二元碼作互斥或運算（二元碼之 MSB 對格雷碼第二位）
 for i in range(1, len(grayList)):
-    if grayList[-i] == grayList[-i-1]:
-        grayList.insert(0, '0')
-    if grayList[-i] != grayList[-i-1]:
-        binaryList.insert(0, '1')
+    if grayList[i] == binaryList[i-1]:
+        binaryList.append('0')
+    if grayList[i] != binaryList[i-1]:
+        binaryList.append('1')
 
 # 將串列轉換成字串後印出
 binaryOutput = ''.join(binaryList)

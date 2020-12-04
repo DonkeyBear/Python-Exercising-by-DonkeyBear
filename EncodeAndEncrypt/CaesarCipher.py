@@ -72,11 +72,13 @@ modeCheck = input('【凱薩密碼轉換器】\n輸入 1 進入「加密模式�
 # 加密模式
 if modeCheck == '1':
     encryptCaesar()
+    input()
     sysExit()
 
 # 解密模式
 if modeCheck == '2':
     decryptCaesar()
+    input()
     sysExit()
 
 else:

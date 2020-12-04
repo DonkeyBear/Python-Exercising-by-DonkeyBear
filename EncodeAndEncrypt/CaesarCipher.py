@@ -3,10 +3,19 @@ from sys import exit as sysExit
 def encryptCaesar():
     plainText = input('請輸入要加密的內容（僅限英文）：')
     plainList = [] 
-    plainList[:0] = plainText
+    plainList[:] = plainText
     cipherList = []
     caesarListUpper = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
     caesarListLower = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
+    caesarKey = int(input('請輸入金鑰（偏移量）：'))
+    for i in range(0, len(plainList)):
+        if plainList[i].isupper == True:
+
+        if plainList[i].islower == True:
+
+        else:
+            
 
 
 def decryptCaesar():

@@ -9,25 +9,23 @@ cipherList = []
 cipherList[:] = cipherText
 plainList = []
 
-caesarKey = int(input('請輸入金鑰（偏移量）：'))
-if caesarKey > 25:
-    caesarKey = caesarKey % 26
+# 金鑰範圍：1 ~ 25
+for caesarKey in range(1, 26):
+    for i in range(0, len(cipherList)):
+        if cipherList[i].isupper() == True:
+            j = upperList.index(cipherList[i])
+            j -= caesarKey
+            plainList.append(upperList[j])
+            continue
 
-for i in range(0, len(cipherList)):
-    if cipherList[i].isupper() == True:
-        j = upperList.index(cipherList[i])
-        j -= caesarKey
-        plainList.append(upperList[j])
-        continue
+        if cipherList[i].islower() == True:
+            j = lowerList.index(cipherList[i])
+            j -= caesarKey
+            plainList.append(lowerList[j])
+            continue
 
-    if cipherList[i].islower() == True:
-        j = lowerList.index(cipherList[i])
-        j -= caesarKey
-        plainList.append(lowerList[j])
-        continue
+        else:
+            plainList.append(cipherList[i])
 
-    else:
-        plainList.append(cipherList[i])
-
-plainText = ''.join(plainList)
-print('解密後的內容為：' + plainText)
+    plainText = ''.join(plainList)
+    print('解密後的內容為：' + plainText)

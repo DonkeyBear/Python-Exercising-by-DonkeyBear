@@ -1,19 +1,20 @@
 from sys import exit as sysExit
 
+cipherList = []
+upperList = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
+lowerList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+
 def encryptCaesar():
     plainText = input('請輸入要加密的內容（僅限英文）：')
     plainList = [] 
     plainList[:] = plainText
-    cipherList = []
-    upperList = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-    lowerList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
     caesarKey = int(input('請輸入金鑰（偏移量）：'))
     if caesarKey > 25:
         caesarKey = caesarKey % 26
 
     for i in range(0, len(plainList)):
-        if plainList[i].isupper == True:
+        if plainList[i].isupper() == True:
             j = upperList.index(plainList[i])
             j += caesarKey
             if j > 25:
@@ -21,7 +22,7 @@ def encryptCaesar():
             cipherList.append(upperList[j])
             continue
 
-        if plainList[i].islower == True:
+        if plainList[i].islower() == True:
             j = lowerList.index(plainList[i])
             j += caesarKey
             if j > 25:
@@ -41,12 +42,12 @@ def decryptCaesar():
 modeCheck = input('【凱薩密碼轉換器】\n輸入 1 進入「加密模式」，\n輸入 2 進入「解密模式」：')
 
 # 加密模式
-if modeCheck == 1:
+if modeCheck == '1':
     encryptCaesar()
     sysExit()
 
 # 解密模式
-if modeCheck == 2:
+if modeCheck == '2':
     decryptCaesar()
     sysExit()
 

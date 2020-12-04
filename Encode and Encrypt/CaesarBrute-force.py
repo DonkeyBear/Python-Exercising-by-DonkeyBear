@@ -32,3 +32,5 @@ for caesarKey in range(1, 26):
     if caesarKey < 10:
         keyNum = str(caesarKey + ' ')
     print('以 ' + keyNum + ' 作為金鑰解密後的內容為：' + plainText)
+
+input()

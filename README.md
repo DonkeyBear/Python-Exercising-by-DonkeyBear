@@ -13,6 +13,7 @@
 >     * [CaesarBrute-force.py](#caesarbrute-forcepy)
 >     * [CaesarCipher.py](#caesarcipherpy)
 >     * [GrayToBinary.py](#graytobinarypy)
+>     * [VigenereCipher.py](#vigenerecipherpy)
 > * [**Misc**](#misc)
 >     * [AnchorTrans.py](#anchortranspy)
 >     * [Fibonacci.py](#fibonaccipy)
@@ -63,6 +64,10 @@
 ### GrayToBinary.py
 
 　　輸入 `格雷碼`（gray code）後即可自動轉換為對應的 `二元碼`（binary code）。
+
+### VigenereCipher.py
+
+　　用於將文字加密為維吉尼亞密碼，或將維吉尼亞密碼解密成文字。
 
 [返回目錄](#目錄)
 

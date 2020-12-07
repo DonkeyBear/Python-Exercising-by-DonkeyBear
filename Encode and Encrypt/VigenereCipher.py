@@ -10,7 +10,7 @@ def encryptVigenere():
     plainList[:] = plainText
     cipherList = []
 
-    vigenereKey = input('請輸入密鑰：\n（僅限英文字母，不分大小寫，不可使用空白、符號及其他字元）\n').lower()
+    vigenereKey = input('\n請輸入密鑰：\n（僅限英文字母，不分大小寫，不可使用空白、符號及其他字元）\n').lower()
     keyList = []
     keyList[:] = vigenereKey
     k = 0
@@ -41,13 +41,38 @@ def encryptVigenere():
         else:
             cipherList.append(plainList[i])
 
-
     cipherText = ''.join(cipherList)
-    print('加密後的內容為：\n' + cipherText)
-
+    print('\n加密後的內容為：\n' + cipherText)
 
 def decryptVigenere():
-    None
+    cipherText = input('請輸入要解密的內容：\n')
+    cipherList = [] 
+    cipherList[:] = cipherText
+    plainList = []
+
+    vigenereKey = input('\n請輸入密鑰：\n').lower()
+    keyList = []
+    keyList[:] = vigenereKey
+    k = 0
+
+    for i in range(0, len(cipherList)):
+        if cipherList[i].isupper() == True:
+            j = upperList.index(cipherList[i])
+            j -= vigenereDict[keyList[k]]
+            plainList.append(upperList[j])
+            continue
+
+        if cipherList[i].islower() == True:
+            j = lowerList.index(cipherList[i])
+            j -= vigenereDict[keyList[k]]
+            plainList.append(lowerList[j])
+            continue
+
+        else:
+            plainList.append(cipherList[i])
+
+    plainText = ''.join(plainList)
+    print('解密後的內容為：\n' + plainText)
 
 #--------------------------------------------------------------------------------
 

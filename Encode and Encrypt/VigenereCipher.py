@@ -9,44 +9,38 @@ def encryptVigenere():
     plainList = [] 
     plainList[:] = plainText
     cipherList = []
-    plainCount = 0
 
-    vigenereKeyO = input('請輸入密鑰：\n（僅限英文字母，不分大小寫，不可使用空白、符號及其他字元）\n').lower
-    vigenereKey = vigenereKeyO
-    
-    # 計算明文實際長度
-    for i in range(0, len(plainList)):
-        if plainList[i] in upperList or plainList[i] in lowerList:
-            plainCount += 1
-
-    # 調整密鑰長度以匹配明文長度
-    while len(vigenereKey) < plainCount:
-        vigenereKey += vigenereKeyO
-    while len(vigenereKey) > plainCount:
-        vigenereKey = vigenereKey[:len(vigenereKey)-1]
+    vigenereKey = input('請輸入密鑰：\n（僅限英文字母，不分大小寫，不可使用空白、符號及其他字元）\n').lower()
+    keyList = []
+    keyList[:] = vigenereKey
+    k = 0
 
     for i in range(0, len(plainList)):
-        #------------------------------------------
         if plainList[i].isupper() == True:
             j = upperList.index(plainList[i])
-            j += vigenereDict[vigenereKey[i]]
+            j += vigenereDict[keyList[k]]
             if j > 25:
                 j -= 26
             cipherList.append(upperList[j])
+            k += 1
+            if k == len(keyList):
+                k = 0
             continue
-        #------------------------------------------
+
         if plainList[i].islower() == True:
             j = lowerList.index(plainList[i])
-            j += vigenereDict[vigenereKey[i]]
+            j += vigenereDict[keyList[k]]
             if j > 25:
                 j -= 26
             cipherList.append(lowerList[j])
+            k += 1
+            if k == len(keyList):
+                k = 0
             continue
-        #------------------------------------------
 
         else:
             cipherList.append(plainList[i])
-            
+
 
     cipherText = ''.join(cipherList)
     print('加密後的內容為：\n' + cipherText)

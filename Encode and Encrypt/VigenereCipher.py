@@ -29,7 +29,7 @@ def encryptVigenere():
         #------------------------------------------
         if plainList[i].isupper() == True:
             j = upperList.index(plainList[i])
-            j += caesarKey
+            j += vigenereDict[vigenereKey[i]]
             if j > 25:
                 j -= 26
             cipherList.append(upperList[j])
@@ -37,7 +37,7 @@ def encryptVigenere():
         #------------------------------------------
         if plainList[i].islower() == True:
             j = lowerList.index(plainList[i])
-            j += caesarKey
+            j += vigenereDict[vigenereKey[i]]
             if j > 25:
                 j -= 26
             cipherList.append(lowerList[j])
@@ -46,6 +46,7 @@ def encryptVigenere():
 
         else:
             cipherList.append(plainList[i])
+            
 
     cipherText = ''.join(cipherList)
     print('加密後的內容為：\n' + cipherText)

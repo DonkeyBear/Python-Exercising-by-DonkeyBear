@@ -10,14 +10,17 @@ def encryptVigenere():
     cipherList = []
     plainCount = 0
 
-    vigenereKey = input('請輸入密鑰：\n（僅限英文字母，不可使用空白、符號及其他字元）\n')
+    vigenereKey = input('請輸入密鑰：\n（僅限英文字母，不分大小寫，不可使用空白、符號及其他字元）\n')
     
+    # 調整密鑰長度以匹配明文長度
     for i in range(0, len(plainList)):
         if plainList[i] in upperList or plainList[i] in lowerList:
             plainCount += 1
-    
     while len(vigenereKey) < plainCount:
         vigenereKey += vigenereKey
+    while len(vigenereKey) > plainCount:
+        vigenereKey = vigenereKey[:len(vigenereKey)-1]
+
 
 def decryptVigenere():
     None

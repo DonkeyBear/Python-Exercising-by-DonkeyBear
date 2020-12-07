@@ -8,8 +8,15 @@ def encryptVigenere():
     plainList = [] 
     plainList[:] = plainText
     cipherList = []
+    plainCount = 0
 
     vigenereKey = input('請輸入密鑰（僅限英文）：')
+    
+    for i in range(0, len(plainList)):
+        if plainList[i] in upperList or plainList[i] in lowerList:
+            plainCount += 1
+    
+    vigenereKey
 
 def decryptVigenere():
     None

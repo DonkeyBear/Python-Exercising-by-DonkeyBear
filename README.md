@@ -10,6 +10,7 @@
 >     * [tictactoe.py](#tictactoepy)
 > * [**Encode and Encrypt**](#encode-and-encrypt)
 >     * [BinaryToGray.py](#binarytograypy)
+>     * [CaesarBrute-force.py](#caesarbrute-forcepy)
 >     * [CaesarCipher.py](#caesarcipherpy)
 >     * [GrayToBinary.py](#graytobinarypy)
 > * [**Misc**](#misc)

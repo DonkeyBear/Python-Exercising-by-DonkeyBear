@@ -16,17 +16,17 @@ def decryptVigenere():
 
 #--------------------------------------------------------------------------------
 
-modeCheck = input('【凱薩密碼轉換器】\n輸入 1 進入「加密模式」，\n輸入 2 進入「解密模式」：')
+modeCheck = input('【維吉尼亞密碼轉換器】\n輸入 1 進入「加密模式」，\n輸入 2 進入「解密模式」：')
 
 # 加密模式
 if modeCheck == '1':
-    encryptCaesar()
+    encryptVigenere()
     input()
     sysExit()
 
 # 解密模式
 if modeCheck == '2':
-    decryptCaesar()
+    decryptVigenere()
     input()
     sysExit()
 

@@ -2,7 +2,7 @@ from sys import exit as sysExit
 
 upperList = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
 lowerList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
-vigenereDict = {'a':1,'b':2,'c':3,'d':4,'e':5,'f':6,'g':7,'h':8,'i':9,'j':10,'k':11,'l':12,'m':13,'n':14,'o':15,'p':16,'q':17,'r':18,'s':19,'t':20,'u':21,'v':22,'w':23,'x':24,'y':25,'z':26}
+vigenereDict = {'a':0,'b':1,'c':2,'d':3,'e':4,'f':5,'g':6,'h':7,'i':8,'j':9,'k':10,'l':11,'m':12,'n':13,'o':14,'p':15,'q':16,'r':17,'s':18,'t':19,'u':20,'v':21,'w':22,'x':23,'y':24,'z':25}
 
 def encryptVigenere():
     plainText = input('請輸入要加密的內容：\n（僅限英文，空白、符號及特殊字元維持原樣不加密）\n')
@@ -25,7 +25,30 @@ def encryptVigenere():
     while len(vigenereKey) > plainCount:
         vigenereKey = vigenereKey[:len(vigenereKey)-1]
 
-    
+    for i in range(0, len(plainList)):
+        #------------------------------------------
+        if plainList[i].isupper() == True:
+            j = upperList.index(plainList[i])
+            j += caesarKey
+            if j > 25:
+                j -= 26
+            cipherList.append(upperList[j])
+            continue
+        #------------------------------------------
+        if plainList[i].islower() == True:
+            j = lowerList.index(plainList[i])
+            j += caesarKey
+            if j > 25:
+                j -= 26
+            cipherList.append(lowerList[j])
+            continue
+        #------------------------------------------
+
+        else:
+            cipherList.append(plainList[i])
+
+    cipherText = ''.join(cipherList)
+    print('加密後的內容為：\n' + cipherText)
 
 
 def decryptVigenere():

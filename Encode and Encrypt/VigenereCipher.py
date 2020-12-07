@@ -60,12 +60,18 @@ def decryptVigenere():
             j = upperList.index(cipherList[i])
             j -= vigenereDict[keyList[k]]
             plainList.append(upperList[j])
+            k += 1
+            if k == len(keyList):
+                k = 0
             continue
 
         if cipherList[i].islower() == True:
             j = lowerList.index(cipherList[i])
             j -= vigenereDict[keyList[k]]
             plainList.append(lowerList[j])
+            k += 1
+            if k == len(keyList):
+                k = 0
             continue
 
         else:

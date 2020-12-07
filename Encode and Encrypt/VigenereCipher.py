@@ -5,7 +5,7 @@ lowerList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q'
 vigenereDict = {'a':0,'b':1,'c':2,'d':3,'e':4,'f':5,'g':6,'h':7,'i':8,'j':9,'k':10,'l':11,'m':12,'n':13,'o':14,'p':15,'q':16,'r':17,'s':18,'t':19,'u':20,'v':21,'w':22,'x':23,'y':24,'z':25}
 
 def encryptVigenere():
-    plainText = input('請輸入要加密的內容：\n（僅限英文，空白、符號及特殊字元維持原樣不加密）\n')
+    plainText = input('\n請輸入要加密的內容：\n（僅限英文，空白、符號及特殊字元維持原樣不加密）\n')
     plainList = [] 
     plainList[:] = plainText
     cipherList = []
@@ -45,7 +45,7 @@ def encryptVigenere():
     print('\n加密後的內容為：\n' + cipherText)
 
 def decryptVigenere():
-    cipherText = input('請輸入要解密的內容：\n')
+    cipherText = input('\n請輸入要解密的內容：\n')
     cipherList = [] 
     cipherList[:] = cipherText
     plainList = []
@@ -78,7 +78,7 @@ def decryptVigenere():
             plainList.append(cipherList[i])
 
     plainText = ''.join(plainList)
-    print('解密後的內容為：\n' + plainText)
+    print('\n解密後的內容為：\n' + plainText)
 
 #--------------------------------------------------------------------------------
 

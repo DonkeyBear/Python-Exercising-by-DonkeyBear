@@ -4,19 +4,20 @@ upperList = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q'
 lowerList = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 
 def encryptVigenere():
-    plainText = input('請輸入要加密的內容（僅限英文）：')
+    plainText = input('請輸入要加密的內容：\n（僅限英文，空白、符號及特殊字元維持原樣不加密）\n')
     plainList = [] 
     plainList[:] = plainText
     cipherList = []
     plainCount = 0
 
-    vigenereKey = input('請輸入密鑰（僅限英文）：')
+    vigenereKey = input('請輸入密鑰：\n（僅限英文字母，不可使用空白、符號及其他字元）\n')
     
     for i in range(0, len(plainList)):
         if plainList[i] in upperList or plainList[i] in lowerList:
             plainCount += 1
     
-    vigenereKey
+    while len(vigenereKey) < plainCount:
+        vigenereKey += vigenereKey
 
 def decryptVigenere():
     None

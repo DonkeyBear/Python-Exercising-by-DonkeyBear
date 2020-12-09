@@ -1,5 +1,5 @@
 import tkinter as tk
-from time import sleep as TimeSleep
+from random import randint
 
 colorR = 0
 colorG = 0
@@ -15,32 +15,55 @@ def dec2hex(inputDec):
     return strHex
 
 def changeColorR(value):
-    global colorR
-    colorR += value
-    if colorR > 255:
-        colorR = 255
+    global colorR, colorStateR
+    value = randint(0, value)
+    if colorStateR == 1:
+        colorR += value
+        if colorR > 255:
+            colorR = 255
+            colorStateR = 0
+    else:
+        colorR -= value
+        if colorR < 0:
+            colorR = 0
+            colorStateR = 1
     return colorR
 
 def changeColorG(value):
-    global colorG
-    colorG += value
-    if colorG > 255:
-        colorG = 255
+    global colorG, colorStateG
+    value = randint(0, value)
+    if colorStateG == 1:
+        colorG += value
+        if colorG > 255:
+            colorG = 255
+            colorStateG = 0
+    else:
+        colorG -= value
+        if colorG < 0:
+            colorG = 0
+            colorStateG = 1
     return colorG
 
 def changeColorB(value):
-    global colorB
-    colorB += value
-    if colorB > 255:
-        colorB = 255
+    global colorB, colorStateB
+    value = randint(0, value)
+    if colorStateB == 1:
+        colorB += value
+        if colorB > 255:
+            colorB = 255
+            colorStateB = 0
+    else:
+        colorB -= value
+        if colorB < 0:
+            colorB = 0
+            colorStateB = 1
     return colorB
 
 def changeBgColor():
-    global colorR, colorG, colorB
-    bgColor = '#' + dec2hex(changeColorR(1)) + dec2hex(changeColorG(2)) + dec2hex(changeColorB(3))
+    bgColor = '#' + dec2hex(changeColorR(7)) + dec2hex(changeColorG(2)) + dec2hex(changeColorB(3))
 
     window.configure(background=str(bgColor))
-    window.after(10, changeBgColor)
+    window.after(15, changeBgColor)
 
 window = tk.Tk()
 window.title('Rainbow')

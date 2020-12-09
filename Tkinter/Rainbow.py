@@ -1,21 +1,22 @@
 import tkinter as tk
 from time import sleep as TimeSleep
 
-bgInt = 0
+colorR = 0
+colorG = 0
+colorB = 0
 
-def hex2str(inputHex):
-    strHex = inputHex
-    return strHex[2:]
+def dec2hex(inputDec):
+    strHex = str(hex(inputDec))[2:]
+    if len(strHex) < 2:
+        strHex = '0' + strHex
+    return strHex
 
 def changeColor():
-    global bgInt
-    bgStr = str(bgInt)
-    while len(bgStr) < 6:
-        bgStr = '0' + bgStr
-    bgColor = '#'+ bgStr
+    global colorR, colorG, colorB
+    bgColor = '#' + dec2hex(colorR) + dec2hex(colorG) + dec2hex(colorB)
+
     window.configure(background=str(bgColor))
     window.after(10, changeColor)
-    bgInt += 1
 
 window = tk.Tk()
 window.title('Rainbow')

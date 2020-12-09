@@ -14,16 +14,30 @@ def dec2hex(inputDec):
         strHex = '0' + strHex
     return strHex
 
-def changeColor(color, value):
-    color += value
-    if color > 255:
-        color = 255
-    return color
+def changeColorR(value):
+    global colorR
+    colorR += value
+    if colorR > 255:
+        colorR = 255
+    return colorR
 
+def changeColorG(value):
+    global colorG
+    colorG += value
+    if colorG > 255:
+        colorG = 255
+    return colorG
+
+def changeColorB(value):
+    global colorB
+    colorB += value
+    if colorB > 255:
+        colorB = 255
+    return colorB
 
 def changeBgColor():
     global colorR, colorG, colorB
-    bgColor = '#' + dec2hex(changeColor(colorR, 1)) + dec2hex(changeColor(colorG, 2)) + dec2hex(changeColor(colorB, 3))
+    bgColor = '#' + dec2hex(changeColorR(1)) + dec2hex(changeColorG(2)) + dec2hex(changeColorB(3))
 
     window.configure(background=str(bgColor))
     window.after(10, changeBgColor)

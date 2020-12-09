@@ -15,16 +15,15 @@ def dec2hex(inputDec):
     return strHex
 
 def changeColor(color, value):
-    global
-    return color
     color += value
     if color > 255:
         color = 255
+    return color
 
 
 def changeBgColor():
     global colorR, colorG, colorB
-    bgColor = '#' + dec2hex(colorR) + dec2hex(colorG) + dec2hex(colorB)
+    bgColor = '#' + dec2hex(changeColor(colorR, 1)) + dec2hex(changeColor(colorG, 2)) + dec2hex(changeColor(colorB, 3))
 
     window.configure(background=str(bgColor))
     window.after(10, changeBgColor)

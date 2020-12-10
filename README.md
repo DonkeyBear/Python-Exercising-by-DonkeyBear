@@ -13,6 +13,7 @@
 >     * [CaesarBrute-force.py](#caesarbrute-forcepy)
 >     * [CaesarCipher.py](#caesarcipherpy)
 >     * [GrayToBinary.py](#graytobinarypy)
+>     * [MorseCode.py](#morsecodepy)
 >     * [VigenereCipher.py](#vigenerecipherpy)
 > * [**Misc**](#misc)
 >     * [AnchorTrans.py](#anchortranspy)
@@ -25,6 +26,7 @@
 >     * [TextReverser.py](#textreverserpy)
 >     * [TimeUnitTrans.py](#timeunittranspy)
 > * [**Tkinter**](#tkinter)
+>     * [Rainbow.py](#rainbowpy)
 >     * [Tkinter_BMIcalc.py](#tkinter_bmicalcpy)
 
 ## Automate the boring stuff with Python
@@ -64,6 +66,10 @@
 ### GrayToBinary.py
 
 　　輸入 `格雷碼`（gray code）後即可自動轉換為對應的 `二元碼`（binary code）。
+
+### MorseCode.py
+
+　　建置了英文、數字、標點符號、注音符號的摩斯電碼字典。目前無實際用途。
 
 ### VigenereCipher.py
 
@@ -119,6 +125,10 @@
 ## Tkinter
 
 　　使用 Python 內建的 GUI 函式庫 **Tkinter** 建立的範例與練習。
+
+### Rainbow.py
+
+　　用 Tkinter 視窗的背景色作為彩色漸變燈。
 
 ### Tkinter_BMIcalc.py
 

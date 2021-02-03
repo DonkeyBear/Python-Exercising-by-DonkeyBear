@@ -60,7 +60,9 @@ def changeColorB(value):
     return colorB
 
 def changeBgColor():
-    bgColor = '#' + dec2hex(changeColorR(7)) + dec2hex(changeColorG(2)) + dec2hex(changeColorB(3))
+    bgColor = '#' + dec2hex(changeColorR(7)) + \
+                    dec2hex(changeColorG(2)) + \
+                    dec2hex(changeColorB(3))
 
     window.configure(background=str(bgColor))
     window.after(15, changeBgColor)
@@ -68,6 +70,6 @@ def changeBgColor():
 window = tk.Tk()
 window.title('Rainbow')
 window.geometry('300x300')
-window.after(10, changeBgColor)
+window.after(15, changeBgColor)
 
 window.mainloop()
